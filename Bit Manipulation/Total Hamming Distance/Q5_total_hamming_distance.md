@@ -3,8 +3,6 @@
 ### Description
 The Hamming distance between two integers is the number of positions at which the corresponding bits are different. Now, given an integer array `nums`, find the **sum of Hamming distances** between all pairs of the integers in the array.
 
-**Optimization Hint:** For each bit position (0 to 31), count how many numbers have that bit set ($k$) and how many don't ($n-k$). The distance contribution for that bit is $k \times (n-k)$.
-
 ---
 
 ### Input

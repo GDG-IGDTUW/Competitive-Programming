@@ -144,7 +144,7 @@ Feel free to reach out to the maintainers if you have any questions or suggestio
 
 🔹 Number Theory / Prefix Sum
 <br>
-👉 Tamanna - @Tammanasehwag
+👉 Tammana - @Tammana17
 <br>
 <br>
 
