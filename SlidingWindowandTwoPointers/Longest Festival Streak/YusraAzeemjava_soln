@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class festive {
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();     
+        int k = sc.nextInt();    
+
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println(maxSubArrayLen(k, arr));
+        sc.close();
+    }
+    public static int maxSubArrayLen(int target, int[] nums) {
+        int left=0,right=0,sum=0;
+        int maxlen=0;
+        
+        while(right<nums.length ){
+            
+                sum+=nums[right];
+                right++;
+            
+            while(sum>=target){//till valid again
+                
+                sum-=nums[left];
+                left++;
+                
+            }
+              maxlen=Math.max(right-left,maxlen);
+        }
+
+        return maxlen;
+    }
+}
